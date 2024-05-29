@@ -1,0 +1,54 @@
+@charset "utf-8";
+@font-face {
+  font-family: "Spartan-Medium";
+  src: url(../fonts/Spartan-Medium.ttf);
+}
+@font-face {
+  font-family: "Spartan-Bold";
+  src: url(../fonts/Spartan-Bold.ttf);
+}
+:root {
+  --fonte-padrao: "Spartan-Medium", sans-serif;
+  --cor-padrao: #f6f6f6;
+  --fonte-destaque: "Spartan-Bold", sans-serif;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.363);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.material-symbols-outlined {
+  color: var(--cor-padrao);
+}
+.header-titulo {
+  text-align: center;
+  font-family: var(--fonte-padrao);
+  color: var(--cor-padrao);
+  z-index: 2;
+  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
+}
+.titulo-destaque {
+  font-family: var(--fonte-destaque);
+  text-decoration: underline;
+}
+body {
+  background: -webkit-linear-gradient(
+    140deg,
+    #2d1432,
+    #7d3b56,
+    #6771c8,
+    #949ed1
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    140deg,
+    #2d1432,
+    #7d3b56,
+    #6771c8,
+    #949ed1
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
