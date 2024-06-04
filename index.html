@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <title>CadastraPro</title>
   </head>
   <body>
@@ -49,7 +53,12 @@
             </label>
           </div>
           <div class="form-control">
-            <input type="file" accept="image/*" id="imageInput" />
+            <input
+              type="file"
+              accept="image/*"
+              id="imageInput"
+              class="img-input"
+            />
             <label>
               <span style="transition-delay: 350ms">I</span>
               <span style="transition-delay: 300ms">m</span>
@@ -67,7 +76,34 @@
             <button class="btn-limpar">Limpar</button>
           </div>
         </div>
+
+        <div class="mostrar-produtos">
+          <h1 class="titulo-principal">Meus Produtos</h1>
+          <div class="produtos-container">
+            <div class="card produtos-item">
+              <img
+                class="imagem-do-produto"
+                src="imagens/semimagem.jpg"
+                alt="imagem não encontrada"
+              />
+              <div class="card nome-do-produto">
+                <h2 class="nome-do-produto">Nenhum Produto Encontrado</h2>
+              </div>
+              <div class="card preco-excluir">
+                <p class="preco-do-produto">00.00</p>
+                <button class="btn-excluir-item">
+                  <span class="material-symbols-outlined"> delete </span>
+                </button>
+              </div>
+              <hr />
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer>
+      <h2>Made with &#9825; by Tullio Silva</h2>
+    </footer>
   </body>
 </html>
