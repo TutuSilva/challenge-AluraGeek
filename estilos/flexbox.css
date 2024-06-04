@@ -1,0 +1,32 @@
+@media only screen and (min-width: 768px) {
+  main {
+    height: 100vh;
+  }
+  .cadastro-de-produtos-container {
+    padding-top: 10vh;
+    flex-direction: row-reverse;
+  }
+  .adicionar-produtos,
+  .mostrar-produtos {
+    height: 60vh;
+    margin: 2%;
+    padding: 5px;
+    width: 100%;
+  }
+  .produtos-item {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .produtos-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-direction: row;
+  } 
+  .produtos-item {
+    width: 30%;
+  }
+}
