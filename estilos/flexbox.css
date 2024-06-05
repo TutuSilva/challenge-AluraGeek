@@ -29,4 +29,7 @@
   .produtos-item {
     width: 30%;
   }
+  .form-control input{
+    max-width: 90%;
+  }
 }
