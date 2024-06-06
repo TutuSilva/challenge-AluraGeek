@@ -77,7 +77,7 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  gap: 5px;
+  gap: 30px;
 }
 .adicionar-produtos,
 .mostrar-produtos {
@@ -85,8 +85,9 @@ body {
   background-color: rgba(226, 223, 223, 0.178);
   backdrop-filter: blur(25px);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  margin: 5%;
-  padding: 2px;
+  margin: 3%;
+  padding: 5px;
+  padding-bottom: 30px;
   width: 95vw;
 }
 .titulo-principal {
@@ -218,11 +219,12 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .produtos-item > img {
-  width: 100%;
+  width: 80%;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 .nome-do-produto,
+.nenhum-produto-cadastrado,
 .preco-do-produto {
   font-family: var(--fonte-padrao);
   color: var(--cor-padrao);
@@ -232,9 +234,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-.preco-do-produto::after {
-  content: " R$";
 }
 .btn-excluir-item {
   color: rgba(0, 0, 0, 0);

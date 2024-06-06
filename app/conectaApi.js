@@ -16,10 +16,18 @@ async function adicionarProdutos(nome, preco, imagem, id) {
       id: id,
     }),
   });
-
-  const conexaoConvertida = await conexao.json()
-  return conexaoConvertida
+  const conexaoConvertida = await conexao.json();
+  return conexaoConvertida;
 }
+async function excluirProdutos(id) {
+  const conexao = await fetch(`http://localhost:3000/produtos/${id}`, {
+    method: "DELETE",
+  });
+  return conexao.ok;
+}
+
 export const conectaApi = {
-  listaDeProdutos, adicionarProdutos
+  listaDeProdutos,
+  adicionarProdutos,
+  excluirProdutos,
 };

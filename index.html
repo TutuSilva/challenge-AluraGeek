@@ -54,13 +54,23 @@
           </div>
           <div class="form-control">
             <input
-              type="url" id="image-url"
+              type="url"
+              id="image-url"
               id="imageInput"
               class="img-input"
               required
               data-imagemProduto
             />
             <label>
+              <span style="transition-delay: 650ms">U</span>
+              <span style="transition-delay: 600ms">r</span>
+              <span style="transition-delay: 550ms">l</span>
+              <span style="transition-delay: 500ms"></span>
+
+              <span style="transition-delay: 450ms">D</span>
+              <span style="transition-delay: 400ms">a</span>
+              <span style="transition-delay: 400ms"></span>
+
               <span style="transition-delay: 350ms">I</span>
               <span style="transition-delay: 300ms">m</span>
               <span style="transition-delay: 250ms">a</span>
@@ -81,7 +91,8 @@
         <div class="mostrar-produtos">
           <h1 class="titulo-principal">Meus Produtos</h1>
           <div class="produtos-container" data-lista>
-            <!-- <div class="card produtos-item">
+            <h2 class="nenhum-produto-cadastrado">Nenhum produto Cadastrado</h2>
+            <!-- <div class="card produtos-item padrao">
               <img
                 class="imagem-do-produto"
                 src="imagens/semimagem.jpg"
@@ -91,7 +102,7 @@
                 <h2 class="nome-do-produto">Nenhum Produto Encontrado</h2>
               </div>
               <div class="card preco-excluir">
-                <p class="preco-do-produto">00.00</p>
+                <p class="preco-do-produto">0</p>
                 <button class="btn-excluir-item">
                   <span class="material-symbols-outlined"> delete </span>
                 </button>
@@ -107,5 +118,6 @@
     </footer>
     <script type="module" src="app/mostrarProdutos.js"></script>
     <script type="module" src="app/adicionarProdutos.js"></script>
+    <script src="app/limparformulario.js" type="module"></script>
   </body>
 </html>
