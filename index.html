@@ -25,10 +25,10 @@
     </header>
     <main>
       <section class="cadastro-de-produtos-container">
-        <div class="adicionar-produtos">
+        <form class="adicionar-produtos" data-formulario>
           <h1 class="titulo-principal">Adicionar Produtos</h1>
           <div class="form-control">
-            <input required="" type="text" />
+            <input required="" type="text" data-nomeProduto />
             <label>
               <span style="transition-delay: 350ms">N</span>
               <span style="transition-delay: 300ms">o</span>
@@ -40,7 +40,7 @@
             </label>
           </div>
           <div class="form-control">
-            <input required="" type="number" />
+            <input required="" type="number" data-precoProduto />
             <label>
               <span style="transition-delay: 350ms">P</span>
               <span style="transition-delay: 300ms">r</span>
@@ -54,10 +54,11 @@
           </div>
           <div class="form-control">
             <input
-              type="file"
-              accept="image/*"
+              type="url" id="image-url"
               id="imageInput"
               class="img-input"
+              required
+              data-imagemProduto
             />
             <label>
               <span style="transition-delay: 350ms">I</span>
@@ -75,18 +76,18 @@
             <button class="btn-guardar">Enviar</button>
             <button class="btn-limpar">Limpar</button>
           </div>
-        </div>
+        </form>
 
         <div class="mostrar-produtos">
           <h1 class="titulo-principal">Meus Produtos</h1>
-          <div class="produtos-container">
+          <div class="produtos-container" data-lista>
             <!-- <div class="card produtos-item">
               <img
                 class="imagem-do-produto"
                 src="imagens/semimagem.jpg"
                 alt="imagem não encontrada"
               />
-              <div class="card nome-do-produto">
+              <div class="card nome-do-produto" id="1">
                 <h2 class="nome-do-produto">Nenhum Produto Encontrado</h2>
               </div>
               <div class="card preco-excluir">
@@ -104,6 +105,7 @@
     <footer>
       <h2>Made with &#9825; by Tullio Silva</h2>
     </footer>
-    <script type="module" src="app/main.js"></script>
+    <script type="module" src="app/mostrarProdutos.js"></script>
+    <script type="module" src="app/adicionarProdutos.js"></script>
   </body>
 </html>

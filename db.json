@@ -2,9 +2,21 @@
   "produtos": [
     {
       "nome": "Nenhum Produto Encontrado",
-      "preco": "00",
+      "preco": "0",
       "imagem": "https://raw.githubusercontent.com/TutuSilva/challenge-AluraGeek/main/imagens/semimagem.jpg",
       "id": 1
+    },
+    {
+      "id": "bf35",
+      "nome": "loadscreen lara croft",
+      "preco": "55",
+      "imagem": "https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2024/02/tomb-raider-dev-reveals-lara-crofts-official-redesign_7ggr.png"
+    },
+    {
+      "id": "ab17",
+      "nome": "-0=0",
+      "preco": "09900",
+      "imagem": "https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2024/02/tomb-raider-dev-reveals-lara-crofts-official-redesign_7ggr.png"
     }
   ]
 }

@@ -141,9 +141,6 @@ body {
   transform: translateY(-30px);
 }
 
-.form-control .img-input:valid + label span {
-  color: white;
-}
 .botoes-container {
   display: flex;
   justify-content: space-evenly;
