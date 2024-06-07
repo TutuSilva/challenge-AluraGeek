@@ -4,7 +4,7 @@ async function listaDeProdutos() {
   return conexaoConvertida;
 }
 async function adicionarProdutos(nome, preco, imagem, id) {
-  const conexao = await fetch("http://localhost:3000/produtos", {
+  const conexao = await fetch("https://json-server-orpin-one.vercel.app/produtos", {
     method: "POST",
     headers: {
       "Content-type": "application/json",
@@ -20,7 +20,7 @@ async function adicionarProdutos(nome, preco, imagem, id) {
   return conexaoConvertida;
 }
 async function excluirProdutos(id) {
-  const conexao = await fetch(`http://localhost:3000/produtos/${id}`, {
+  const conexao = await fetch(`https://json-server-orpin-one.vercel.app/produtos/${id}`, {
     method: "DELETE",
   });
   return conexao.ok;
