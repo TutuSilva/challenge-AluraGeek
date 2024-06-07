@@ -12,11 +12,14 @@ function constroiCard(nome, preco, imagem, id) {
   const precoFormatado = formataPreco(preco);
   const produto = document.createElement("div");
   produto.className = "produtos-item";
-  produto.innerHTML = `<img
+  produto.innerHTML = `
+              <a href="${imagem}" class="link-imagem-original" target="_blank">
+              <img
                 class="imagem-do-produto"
                 src="${imagem}"
                 alt="imagem não encontrada"
               />
+              </a>
               <div class="card nome-do-produto" id="${id}">
                 <h2 class="nome-do-produto">${nome}</h2>
               </div>
@@ -31,7 +34,7 @@ function constroiCard(nome, preco, imagem, id) {
   const btnExcluir = produto.querySelector(".btn-excluir-item");
   btnExcluir.addEventListener("click", async () => {
     const confirmacao = confirm(
-      "Tem certeza de que deseja excluir este produto?"
+      "O produto será excluido. Deseja continuar?"
     );
     if (confirmacao) {
       const resultado = await conectaApi.excluirProdutos(id);
@@ -51,10 +54,10 @@ function constroiCard(nome, preco, imagem, id) {
 async function listaDeProdutos() {
   const listaAPI = await conectaApi.listaDeProdutos();
   listaAPI.forEach((elemento) =>
-    lista.appendChild(
-      constroiCard(elemento.nome, elemento.preco, elemento.imagem, elemento.id)
-    )
-  );
+  lista.appendChild(
+    constroiCard(elemento.nome, elemento.preco, elemento.imagem, elemento.id)
+  )
+);
 }
 
 listaDeProdutos();

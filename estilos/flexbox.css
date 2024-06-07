@@ -19,17 +19,25 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .produtos-container{
+  .produtos-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 30px;
     flex-direction: row;
-  } 
-  .produtos-item {
-    width: 30%;
   }
-  .form-control input{
+  .produtos-item {
+    width: 40%;
+  }
+  .produtos-item:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  .imagem-do-produto {
+    height: 200px;
+    overflow: hidden;
+  }
+  .form-control input {
     max-width: 90%;
   }
 }

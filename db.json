@@ -1,10 +1,3 @@
 {
-  "produtos": [
-    {
-      "id": "e0e1",
-      "nome": "teste",
-      "preco": "77",
-      "imagem": "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/06/vini-e1717275504772.jpeg?w=1080"
-    }
-  ]
+  "produtos": []
 }
