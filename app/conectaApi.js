@@ -32,6 +32,7 @@ async function excluirProdutos(id) {
     }
   );
   return conexao.ok;
+
 }
 
 export const conectaApi = {

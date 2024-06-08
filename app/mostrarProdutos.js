@@ -40,10 +40,6 @@ function constroiCard(nome, preco, imagem, id) {
       const resultado = await conectaApi.excluirProdutos(id);
       if (resultado) {
         produto.remove();
-      } else {
-        alert(
-          "Não foi possível excluir o produto. Tente novamente mais tarde."
-        );
       }
     }
   });
