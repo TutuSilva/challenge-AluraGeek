@@ -41,7 +41,6 @@
     max-width: 90%;
   }
 }
-
 /* Para celulares médios na horizontal */
 @media (max-width: 768px) and (orientation: landscape) {
   footer {
