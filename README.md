@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">:leaves: Site simulando cadastro de produtos </p>
+<p align="left">:closed_lock_with_key: Site simulando cadastro de produtos </p>
 
 ###
 
